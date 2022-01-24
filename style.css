@@ -1,0 +1,144 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --background-blue: #e0e8ff;
+  --background-blue-order: #f8f9fe;
+  --accent-tone: #766cf1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  width: 330px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.card__hero {
+  width: 100%;
+  height: 30%;
+  background-image: url("./images/illustration-hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__detail {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+}
+
+.card__title {
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 22px;
+  margin: 20px;
+}
+
+.card__description {
+  display: flex;
+  margin: 10px;
+  color: var(--desaturated-blue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.order__details {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-blue-order);
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.order__description {
+  margin-left: 20px;
+}
+
+.order__description > strong {
+  color: var(--dark-blue);
+}
+
+.order__description > span {
+  color: var(--desaturated-blue);
+}
+
+.order__details > a:hover {
+  color: var(--accent-tone);
+  text-decoration: none;
+}
+
+.button-primary {
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bright-blue);
+  cursor: pointer;
+  color: var(--very-pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button-secondary {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--desaturated-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button-primary:hover {
+  background-color: var(--accent-tone);
+}
+
+.button-secondary:hover {
+  color: var(--dark-blue);
+}
+
+/* TODO: MEDIA QUERIES FOR DESKTOP */
